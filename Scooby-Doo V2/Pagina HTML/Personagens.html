@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../Folha de Estilos/Personagem.css" />
+        <link rel="sortcut icon" href="../Imagens/Imagens Diversas/Logo Scooby Doo SA.png" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Personagem - Scooby-Doo Mistério SA</title>
+    </head>
+
+    <body>
+        <header>
+            <script src="../JavaScript/Personagens.js"></script>
+            <center>
+                <div class="LogoLink">
+                    <a href="../Pagina HTML/MainPage.html"><img src="../Imagens/Imagens Diversas/Logo Scooby Doo SA.png"></a>
+                </div>
+            </center>
+            <center>
+                <div class="Menu_Web">
+                    <nav>
+                        <ul>
+                            <li><a href="MainPage.html">Pagina Principal</a></li> |
+                            <li><a href="Resumo.html">Resumo da Série</a></li> |
+                            <li><a href="Monstros.html">Monstros</a></li> |
+                            <li><a href="Sugestão.html">Sugestões</a></li> 
+                        </ul>
+                    </nav>
+                </div>
+            </center>
+            <div class="Mobile_Menu_Button">
+                <button onclick="MenuShow()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <center>
+                <div class="Mobile_Menu" id="Mobile_Nav">
+                    <ul>
+                        <li><a href="Resumo.html">Resumo da Série</a></li>
+                        <li><a href="Personagens.html">Personagens</a></li>
+                        <li><a href="Monstros.html">Monstros</a></li>
+                        <li><a href="Sugestão.html">Sugestões</a></li> 
+                    </ul>
+
+                    <p>Você pode gostar!</p>
+
+                    <ul>
+                        <li><a target="blank" href="https://www.google.com">Scooby-Doo Cadê Você?</a></li>
+                        <li><a target="blank" href="https://www.youtube.com">O Que Há de Novo Scooby-Doo?</a></li>
+                        <li><a target="blank" href="https://www.facebook.com">O Pequeno Scooby-Doo</a></li>
+                        <li><a target="blank" href="https://www.flightradar24.com/">Scooby-Doo - Filmes</a></li>
+                        <li><a target="blank" href="https://twitter.com/">Scooby-Doo & Scooby-Loo</a></li>
+                        <li><a target="blank" href="https://www.google.com/maps">Scooby-Doo - Live Action</a></li>
+                        <li><a target="blank" href="https://translate.google.com.br/?hl=pt-BR">Os 13 Fantasmas de Scooby-Doo</a></li>
+                        <li><a target="blank" href="https://mail.google.com/mail/u/0/#inbox">Que Legal Scooby-Doo</a></li>
+                        <li><a target="blank" href="https://www.netflix.com/br/">Scooby-Doo Atrás das Pistas</a></li>
+                    </ul>
+
+                    <button onclick="CloseMenu()" class="closebtn">&times;</button>
+                </div>
+            </center>
+        </header>
+            <section>
+                <center>
+                    <h2><strong>Personagem</strong></h2><br>
+                </center>
+
+                <aside>
+                    <center>
+                        <h2>
+                            Você pode gostar!
+                        </h2>
+                    <!--Links que levam de a Sites Pré-Definidos, mas que não correspondem ao que esta escrito-->
+                        <ul>
+                            <li><a target="blank" href="https://www.google.com">Scooby-Doo Cadê Você?</a></li>
+                            <li><a target="blank" href="https://www.youtube.com">O Que Há de Novo Scooby-Doo?</a></li>
+                            <li><a target="blank" href="https://www.facebook.com">O Pequeno Scooby-Doo</a></li>
+                            <li><a target="blank" href="https://www.flightradar24.com/">Scooby-Doo - Filmes</a></li>
+                            <li><a target="blank" href="https://twitter.com/">Scooby-Doo & Scooby-Loo</a></li>
+                            <li><a target="blank" href="https://www.google.com/maps">Scooby-Doo - Live Action</a></li>
+                            <li><a target="blank" href="https://translate.google.com.br/?hl=pt-BR">Os 13 Fantasmas de Scooby-Doo</a></li>
+                            <li><a target="blank" href="https://mail.google.com/mail/u/0/#inbox">Que Legal Scooby-Doo</a></li>
+                            <li><a target="blank" href="https://www.netflix.com/br/">Scooby-Doo Atrás das Pistas</a></li>
+                        </ul>
+                    </center>
+                </aside>
+
+                <button class="Personagens" name="Scooby" onclick="AbrirPopUp.call(this)">
+                    <figure id="Container_Personagens">
+                        <img src="../Imagens/Personagens/scooby-doo.png" alt="Scooby-Doo">
+                        <figcaption>Scooby-Doo</figcaption>
+                    </figure>
+                </button>
+
+                <button class="Personagens" name="Salsicha" onclick="AbrirPopUp.call(this)">
+                    <figure id="Container_Personagens">
+                        <img src="../Imagens/Personagens/Salsicha.jpg" alt="Salsicha">
+                        <figcaption>Salsicha</figcaption>
+                    </figure>
+                </button>
+
+                <button class="Personagens" name="Daphine" onclick="AbrirPopUp.call(this)">
+                    <figure id="Container_Personagens">
+                        <img src="../Imagens/Personagens/Daphine.png" alt="Daphine">
+                        <figcaption>Daphine</figcaption>
+                    </figure>
+                </button>
+
+                <button class="Personagens" name="Velma" onclick="AbrirPopUp.call(this)">
+                    <figure id="Container_Personagens">
+                        <img src="../Imagens/Personagens/Velma.png" alt="Velma">
+                        <figcaption>Velma</figcaption>
+                    </figure>
+                </button>
+
+                <button class="Personagens" name="Fred" onclick="AbrirPopUp.call(this)">
+                    <figure id="Container_Personagens">
+                        <img src="../Imagens/Personagens/Fred.png" alt="Fred">
+                        <figcaption>Fred</figcaption>
+                    </figure>
+                </button>
+            </section>
+            <footer>
+                <div class="Content" id="Content_Scooby">
+                    <h2>Scooby-Doo</h2>
+                    <p>
+                        Nessa série o cachorro da turma disputa a atenção do seu melhor amigo com a Velma durante parte da primeira temporada e durante a segunda ele se apaixona
+                        por nova, pela primeira vez e mostrado o cachorro como aluno de uma universidade além de ser responsável pela solução para acabar com a maldição de Baia Crista... 
+                        No demais e velho Scooby de sempre sendo comilão, brincalhão e medroso.
+                    </p>
+                    <center>
+                        <img src="../Imagens/Personagens/scooby-doo.png" alt="Imagem do Scooby"><br>
+                        <button class="togglebtn" id="Fechar" onclick="Close_PopUp()">X</button>
+                        <button class="togglebtn" id="BFechar" onclick="Close_PopUp()">Fechar</button>
+                    </center>
+                </div>
+
+                <div class="Content" id="Content_Salsicha">
+                    <h2>Salsicha</h2>
+                    <p>
+                        Vive um romance durante a primeira temporada com Velma o que causa brigas e disputa de atenção entre sua namorada e seu cachorro, na série também e possível
+                        ver as raras vezes em que ele aparece com alguma roupa diferente da que ele usa geralmente, durante a segunda temporada pode se ver uma evolução mas nada 
+                        estravagante... No demais, bem, é o Salsicha.
+                    </p>
+                    <center>
+                        <img src="../Imagens/Personagens/Salsicha.jpg" alt="Imagem do Salsicha"><br>
+                        <button class="togglebtn" onclick="Close_PopUp()">X</button>
+                    </center>
+                </div>
+
+                <div class="Content" id="Content_Daphine">
+                    <h2>Daphine</h2>
+                    <p>
+                        Por estar extremamente apaixonada por Fred, ela tenta chamar a atenção dele de diversas formas possíveis desde tentar aprender sobre seus gostos até o ponto 
+                        de causar ciumes; no começo da segunda temporada ela se afasta da turma, após os acontecimentos do últimao capitulo da primeira temporada, e vive um romance 
+                        com um herdeiro de uma fabrica de escadas e que mas tarde se revela um monstro que puxa a beleza dos personagens
+                    </p>
+                    <center>
+                        <img src="../Imagens/Personagens/Daphine.png" alt="Imagem da Daphine"><br>
+                        <button class="togglebtn" onclick="Close_PopUp()">&times;</button>
+                    </center>
+                </div>
+
+                <div class="Content" id="Content_Velma">
+                    <h2>Velma</h2>
+                    <p>
+                        Apaixonada por Salsicha, disputa a atenção de seu namorando com Scooby e fica chateada após não escolhida por ele; ela também é uma das principais 
+                        responsaveis pela re-união da turma na segunda temporada... Do resto e Velma, inteligente, espertae que adora enigmas.
+                    </p>
+                    <center>
+                        <img src="../Imagens/Personagens/Velma.png" alt="Imagem da Velma"><br>
+                        <button id="Fechar" class="togglebtn" onclick="Close_PopUp()">&times;</button>
+                    </center>
+                </div>
+
+                <div class="Content" id="Content_Fred">
+                    <h2>Fred</h2>
+                    <p>
+                        Obcessacado por armadilha e apaixonado por vans, o motorista da maquina misterio vive um amor secreto por Daphine porém tem vergonha de assumir; durante a 
+                        primeira temporada ele acredita ser filho do prefeito Jones, porém com o decorrer da série se descobre que na verdade ele é filho de Brad e Judy, por quem 
+                        também e traido devido ao tesouro amaldiçoado.
+                    </p>
+                    <center>
+                        <img src="../Imagens/Personagens/Fred.png" alt="Imagem do Fred"><br>
+                        <button id="Fechar">&times;</button>
+                    </center>
+                </div>
+            </footer>
+    </body>
+</html>
